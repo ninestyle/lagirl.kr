@@ -20,11 +20,11 @@
         "search_not_found_demo": "'${key}'에 대한 결과가 없습니다. (데모)."
     },
     "ko": {
-        "site_title": "LA GIRL | LA 여성 전용 필라테스 & 요가",
+        "site_title": "LA GIRL - LA 여성 전용 필라테스 & 요가",
         "meta_description": "LA에 위치한 여성 전용 필라테스 & 요가 스튜디오, LA GIRL. 여성의 몸과 마음에 최적화된 전문 레슨을 경험하세요.",
-        "og_title": "LA GIRL | LA 여성 전용 필라테스 & 요가",
+        "og_title": "LA GIRL - LA 여성 전용 필라테스 & 요가",
         "og_description": "LA에 위치한 여성 전용 필라테스 & 요가 스튜디오, LA GIRL. 여성의 몸과 마음에 최적화된 전문 레슨을 경험하세요.",
-        "home_subtitle": "Find Your Balance. Feel the Vibe.",
+        "home_subtitle": "Find Your Balance, Feel the Vibe.",
         "overview_title": "LA 여성들의 건강한 에너지, LA GIRL",
         "overview_desc": "LA GIRL은 LA에 위치한 여성 전용 스튜디오입니다. 여성의 몸에 대한 깊은 이해를 바탕으로, 프라이빗한 공간에서 몸과 마음의 완벽한 균형을 찾는 여정을 안내합니다.",
         "pilates_title": "필라테스 프로그램",
@@ -99,11 +99,11 @@
         "demo_request_desc": "보고 계신 사이트처럼 제작해 드립니다."
     },
     "en": {
-        "site_title": "LA GIRL | LA Women-Only Pilates & Yoga",
+        "site_title": "LA GIRL - LA Women-Only Pilates & Yoga",
         "meta_description": "LA GIRL, a women-only Pilates & Yoga studio in LA. Experience expert lessons optimized for women's body and mind.",
-        "og_title": "LA GIRL | LA Women-Only Pilates & Yoga",
+        "og_title": "LA GIRL - LA Women-Only Pilates & Yoga",
         "og_description": "LA GIRL, a women-only Pilates & Yoga studio in LA. Experience expert lessons optimized for women's body and mind.",
-        "home_subtitle": "Find Your Balance. Feel the Vibe.",
+        "home_subtitle": "Find Your Balance, Feel the Vibe.",
         "overview_title": "The Healthy Vibe for LA Women, LA GIRL",
         "overview_desc": "LA GIRL is a women-only studio located in LA. Based on a deep understanding of the female body, we guide you on a journey to find perfect balance in a private, empowering space.",
         "pilates_title": "Pilates Programs",

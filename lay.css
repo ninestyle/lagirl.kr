@@ -1,5 +1,5 @@
 /*
-    Version: 2.2.4
+    Version: 2.2.5
     Last Modified: 2025-11-19
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
@@ -128,26 +128,6 @@ body {
 .pe-section h2 .material-symbols-outlined {
     font-size: 2.2em;
     font-weight: 300;
-}
-
-/* --- Youtube Responsive Container --- */
-.pe-video-responsive {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px var(--shadow-card);
-}
-
-.pe-video-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
 }
 
 /* --- Diet Info Box --- */

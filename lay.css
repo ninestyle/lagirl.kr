@@ -107,8 +107,9 @@ body {
 }
 
 .pe-nav__logo {
-    font-size: 1.8rem;
-    line-height: 1;
+   margin-top: 0.25rem;
+   font-size: 1.8rem;
+   line-height: 1;
 }
 
 .pe-header__title {

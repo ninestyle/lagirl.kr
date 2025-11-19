@@ -83,6 +83,7 @@ const breathingGradientEffect = {
 const siteConfig = {
     canvas_effect: 'breathingGradientEffect',
     canvas_image_type: 'cover',
+    canvas_image_slide: 5,
     canvas_image_count: 4,
     canvas_image_path: './section/home/',
     canvas_image_format: 'webp',

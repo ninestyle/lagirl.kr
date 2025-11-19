@@ -1,5 +1,5 @@
 /*
-    Version: 2.2.2
+    Version: 2.2.3
     Last Modified: 2025-11-19
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
@@ -42,10 +42,10 @@
    --border-form-input: #C0DCD3;
    --border-form-input-focus: var(--text-accent);
    
-   /* Glassmorphism Base Colors */
+   /* Glassmorphism Base Colors - Updated for Minimal Look */
    --ce-text-color: #264653;
-   --ce-input-bg-color: rgba(255, 255, 255, 0.4);
-   --ce-input-border-color: rgba(255, 255, 255, 0.6);
+   --ce-input-bg-color: rgba(255, 255, 255, 0.15); /* More transparent */
+   --ce-input-border-color: transparent; /* No border needed for borderless style */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -82,9 +82,10 @@
        --border-form-input: #3D524D;
        --border-form-input-focus: var(--text-accent);
        
+       /* Glassmorphism Base Colors - Updated for Dark Mode Minimal Look */
        --ce-text-color: #EBF5F0;
-       --ce-input-bg-color: rgba(47, 66, 62, 0.4);
-       --ce-input-border-color: rgba(47, 66, 62, 0.6);
+       --ce-input-bg-color: rgba(255, 255, 255, 0.1); /* Subtle white glass on dark */
+       --ce-input-border-color: transparent;
    }
 }
 

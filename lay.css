@@ -1,5 +1,5 @@
 /*
-    Version: 2.2.3
+    Version: 2.2.4
     Last Modified: 2025-11-19
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
@@ -43,8 +43,8 @@
    --border-form-input-focus: var(--text-accent);
    
    /* Glassmorphism Base Colors - Updated for Minimal Look */
-   --ce-text-color: #264653;
-   --ce-input-bg-color: rgba(255, 255, 255, 0.15); /* More transparent */
+   --ce-text-color: #264653; /* Dark Charcoal for visibility on Light Mode */
+   --ce-input-bg-color: rgba(255, 255, 255, 0.12); /* More transparent */
    --ce-input-border-color: transparent; /* No border needed for borderless style */
 }
 
@@ -83,7 +83,7 @@
        --border-form-input-focus: var(--text-accent);
        
        /* Glassmorphism Base Colors - Updated for Dark Mode Minimal Look */
-       --ce-text-color: #EBF5F0;
+       --ce-text-color: #EBF5F0; /* Light Sage for Dark Mode */
        --ce-input-bg-color: rgba(255, 255, 255, 0.1); /* Subtle white glass on dark */
        --ce-input-border-color: transparent;
    }

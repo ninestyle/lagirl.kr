@@ -10,14 +10,7 @@
         "pilates_02_price": "$45 / session",
         "yoga_01_price": "$35 / session",
         "yoga_02_price": "$30 / session",
-        "pricing_base_fee_label": "1회 기준",
-        "footer_credit_url": "https://www.maxim.pe.kr",
-        "footer_credit_text": "Powered by Maxim",
-        "copyright_text": "&copy; ${year} ${domain_brand}. All Rights Reserved.",
-        "demo_request_button": "Maxim a Web Freelancer",
-        "demo_request_button_url": "https://www.maxim.pe.kr",
-        "contact_success_demo": "문의가 성공적으로 접수되었습니다. (데모)",
-        "search_not_found_demo": "'${key}'에 대한 결과가 없습니다. (데모)."
+        "pricing_base_fee_label": "1회 기준"
     },
     "ko": {
         "site_title": "LA GIRL - LA 여성 전용 필라테스 & 요가",
@@ -105,9 +98,7 @@
         "contact_placeholder_email": "이메일 주소를 입력하세요",
         "contact_placeholder_message": "문의 내용을 입력하세요 (예: 방문 상담 예약 원합니다)",
         "contact_button": "메시지 보내기",
-        "order_button": "상담 예약하기",
-        "demo_request_title": "사이트 제작 문의",
-        "demo_request_desc": "보고 계신 사이트처럼 제작해 드립니다."
+        "order_button": "상담 예약하기"
     },
     "en": {
         "site_title": "LA GIRL - LA Women-Only Pilates & Yoga",
@@ -195,8 +186,6 @@
         "contact_placeholder_email": "Enter your email address",
         "contact_placeholder_message": "Enter your message (e.g., I'd like to book a consultation)",
         "contact_button": "Send Message",
-        "order_button": "Book a Consultation",
-        "demo_request_title": "Project Inquiry",
-        "demo_request_desc": "We can create a site like the one you are viewing."
+        "order_button": "Book a Consultation"
     }
 }

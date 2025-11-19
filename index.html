@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://cdn.9style.com/_inc/express/page-v2.css?update=20251117">
-    <link rel="stylesheet" href="./lay.css?update=20251118">
+    <link rel="stylesheet" href="./lay.css?update=20251119">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
     <script type="application/ld+json">
@@ -175,34 +175,34 @@
 
         <section id="process" class="pe-section js-fade-in section-divider to-primary">
             <div class="pe-container">
-                <h2><span class="material-symbols-outlined">list_alt</span><span data-lang="process_title"></span></h2>
+                <h2><span class="material-symbols-outlined">calendar_month</span><span data-lang="process_title"></span></h2>
                 <p class="pe-section__description" data-lang="process_desc"></p>
                 <div class="pe-process-grid">
                     <div class="pe-process-item">
-                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">edit_square</span></div>
+                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">spa</span></div>
                         <h3 class="pe-process-item__title" data-lang="process_01_title"></h3>
                         <p class="pe-process-item__description" data-lang="process_01_desc"></p>
                     </div>
                     <div class="pe-process-item">
-                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">calendar_month</span></div>
+                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">fitness_center</span></div>
                         <h3 class="pe-process-item__title" data-lang="process_02_title"></h3>
                         <p class="pe-process-item__description" data-lang="process_02_desc"></p>
                     </div>
                     <div class="pe-process-item">
-                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">self_improvement</span></div>
+                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">local_fire_department</span></div>
                         <h3 class="pe-process-item__title" data-lang="process_03_title"></h3>
                         <p class="pe-process-item__description" data-lang="process_03_desc"></p>
                     </div>
                      <div class="pe-process-item">
-                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">sentiment_satisfied</span></div>
+                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">self_improvement</span></div>
                         <h3 class="pe-process-item__title" data-lang="process_04_title"></h3>
                         <p class="pe-process-item__description" data-lang="process_04_desc"></p>
                     </div>
                 </div>
-                <div class="pe-button-group">
-                    <a href="#" class="pe-button" data-lang-href="order_button_url" rel="noopener noreferrer">
-                        <span data-lang="order_button"></span>
-                    </a>
+                
+                <div class="pe-diet-info">
+                    <p><strong data-lang="diet_info_conditions_label"></strong> <span data-lang="diet_info_conditions"></span></p>
+                    <p><strong data-lang="diet_info_cost_label"></strong> <span data-lang="diet_info_cost"></span></p>
                 </div>
             </div>
         </section>
@@ -213,9 +213,11 @@
                 <p class="pe-section__description" data-lang="media_desc"></p>
                 <div class="pe-grid pe-grid--cols-1">
                     <div class="pe-card">
-                        <video class="pe-card__video" controls poster="./section/media/poster.webp" src="./section/media/promo.mp4">
-                            Your browser does not support the video element.
-                        </video>
+                        <!-- Youtube Responsive Container -->
+                        <div class="pe-video-responsive">
+                            <!-- Note: Replace 'ysz5S6PUM-U' with your own Youtube Video ID -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0&modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>

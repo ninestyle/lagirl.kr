@@ -1,48 +1,49 @@
 /*
-    Version: 2.2.1
-    Last Modified: 2025-11-18
+    Version: 2.2.2
+    Last Modified: 2025-11-19
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
 */
 
 /* =================================================================
-   Theme: LA GIRL - Healthy & Energetic (Mint/Coral)
+   Theme: LA GIRL - Modern Sage & Terracotta (Refined Mint/Coral)
 ================================================================= */
 
 :root {
    /* -- Light Mode -- */
    --bg-primary: #FFFFFF;
-   --bg-secondary: #F8FBFB; /* Light Mint */
-   --bg-navbar-animated: linear-gradient(45deg, #f8fbfb, #ffffff, #f8fbfb, #f0f5f5);
+   --bg-secondary: #EBF5F0; /* Soft Sage (Modern Mint) */
+   --bg-navbar-animated: linear-gradient(45deg, #EBF5F0, #FFFFFF, #EBF5F0, #D8EBE5);
    --bg-card: #FFFFFF;
-   --bg-button: #FF6B6B; /* Coral */
-   --bg-button-hover: #E05A5A;
-   --bg-lang-switcher: #E6F7F5; /* Mint */
-   --bg-lang-switcher-hover: #D1EBE8;
-   --bg-lang-switcher-active: #0A4D44;
+   --bg-button: #E07A5F; /* Terracotta (Modern Coral) */
+   --bg-button-hover: #D6694D;
+   --bg-lang-switcher: #D8EBE5; /* Sage Grey */
+   --bg-lang-switcher-hover: #C0DCD3;
+   --bg-lang-switcher-active: #264653;
    --bg-modal-button: var(--bg-button);
    --bg-modal-button-hover: var(--bg-button-hover);
 
-   --text-primary: #333333;
-   --text-secondary: #555555;
-   --text-headings: #0A4D44; /* Deep Mint Green */
-   --text-accent: #FF6B6B; /* Coral */
-   --text-accent-hover: #E05A5A;
-   --text-navbar: #0A4D44;
-   --text-lang-switcher: #0A4D44;
+   --text-primary: #264653; /* Charcoal Green (Instead of Black) */
+   --text-secondary: #5F7D7A; /* Muted Sage Green */
+   --text-headings: #264653; /* Charcoal Green */
+   --text-accent: #E07A5F; /* Terracotta */
+   --text-accent-hover: #D6694D;
+   --text-navbar: #264653;
+   --text-lang-switcher: #264653;
    --text-lang-switcher-active: #FFFFFF;
    --text-button: #FFFFFF;
    --text-modal-button: var(--text-button);
-   --text-section-title-icon: #A6F6E9; /* Light Mint */
+   --text-section-title-icon: #8AB0A6; /* Muted Sage */
    --text-form-loader: var(--text-accent);
 
-   --border-card: #E6F7F5;
-   --border-navbar-bottom: #D1EBE8;
+   --border-card: #D8EBE5;
+   --border-navbar-bottom: #C0DCD3;
    --border-section-heading-underline: var(--text-accent);
-   --border-form-input: #D1EBE8;
+   --border-form-input: #C0DCD3;
    --border-form-input-focus: var(--text-accent);
    
-   --ce-text-color: #0A4D44;
+   /* Glassmorphism Base Colors */
+   --ce-text-color: #264653;
    --ce-input-bg-color: rgba(255, 255, 255, 0.4);
    --ce-input-border-color: rgba(255, 255, 255, 0.6);
 }
@@ -50,40 +51,40 @@
 @media (prefers-color-scheme: dark) {
    :root {
        /* -- Dark Mode -- */
-       --bg-primary: #1A202C;
-       --bg-secondary: #2D3748;
-       --bg-navbar-animated: linear-gradient(45deg, #2d3748, #1a202c, #2d3748, #404a5e);
-       --bg-card: #2D3748;
-       --bg-button: #FF8787; /* Light Coral */
-       --bg-button-hover: #FF6B6B;
-       --bg-lang-switcher: #2D3748;
-       --bg-lang-switcher-hover: #4A5568;
-       --bg-lang-switcher-active: #A6F6E9;
+       --bg-primary: #1A2624; /* Very Dark Sage */
+       --bg-secondary: #233330; /* Dark Sage */
+       --bg-navbar-animated: linear-gradient(45deg, #233330, #1A2624, #233330, #2F423E);
+       --bg-card: #233330;
+       --bg-button: #E07A5F;
+       --bg-button-hover: #ED8C72;
+       --bg-lang-switcher: #2F423E;
+       --bg-lang-switcher-hover: #3D524D;
+       --bg-lang-switcher-active: #EBF5F0;
        --bg-modal-button: var(--bg-button);
        --bg-modal-button-hover: var(--bg-button-hover);
 
-       --text-primary: #E2E8F0;
-       --text-secondary: #A0AEC0;
-       --text-headings: #A6F6E9; /* Light Mint */
-       --text-accent: #FF8787; /* Light Coral */
-       --text-accent-hover: #FF6B6B;
-       --text-navbar: #A6F6E9;
-       --text-lang-switcher: #A6F6E9;
-       --text-lang-switcher-active: #1A202C;
-       --text-button: #1A202C;
+       --text-primary: #EBF5F0;
+       --text-secondary: #A5C4BC;
+       --text-headings: #FFFFFF;
+       --text-accent: #E07A5F;
+       --text-accent-hover: #ED8C72;
+       --text-navbar: #FFFFFF;
+       --text-lang-switcher: #EBF5F0;
+       --text-lang-switcher-active: #1A2624;
+       --text-button: #FFFFFF;
        --text-modal-button: var(--text-button);
-       --text-section-title-icon: #4A5568;
+       --text-section-title-icon: #5F7D7A;
        --text-form-loader: var(--text-accent);
 
-       --border-card: #4A5568;
-       --border-navbar-bottom: #4A5568;
+       --border-card: #3D524D;
+       --border-navbar-bottom: #2F423E;
        --border-section-heading-underline: var(--text-accent);
-       --border-form-input: #4A5568;
+       --border-form-input: #3D524D;
        --border-form-input-focus: var(--text-accent);
        
-       --ce-text-color: #E2E8F0;
-       --ce-input-bg-color: rgba(74, 85, 104, 0.4);
-       --ce-input-border-color: rgba(74, 85, 104, 0.6);
+       --ce-text-color: #EBF5F0;
+       --ce-input-bg-color: rgba(47, 66, 62, 0.4);
+       --ce-input-border-color: rgba(47, 66, 62, 0.6);
    }
 }
 
@@ -126,4 +127,43 @@ body {
 .pe-section h2 .material-symbols-outlined {
     font-size: 2.2em;
     font-weight: 300;
+}
+
+/* --- Youtube Responsive Container --- */
+.pe-video-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-card);
+}
+
+.pe-video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- Diet Info Box --- */
+.pe-diet-info {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid var(--border-card);
+    border-radius: 12px;
+    background-color: var(--bg-card);
+    text-align: center;
+}
+.pe-diet-info p {
+    margin: 5px 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+.pe-diet-info strong {
+    color: var(--text-headings);
+    margin-right: 5px;
 }

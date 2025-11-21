@@ -1,5 +1,5 @@
 /*
-    Version: 2.2.2
+    Version: 3.0.0 (Refactored for Page Express V3)
     Last Modified: 2025-11-21
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
@@ -23,6 +23,7 @@ const breathingGradientEffect = {
 
     init: function(headerEl) {
         this.headerElement = headerEl;
+        // V3 uses #ce-bg-canvas internally, but we create it here for custom effect
         this.canvas = document.createElement('canvas');
         this.canvas.id = 'ce-bg-canvas';
         this.ctx = this.canvas.getContext('2d');
@@ -81,11 +82,8 @@ const breathingGradientEffect = {
 };
 
 const siteConfig = {
-    // [Core Setting]
     language: 'ko',
-    TURNSTILE_SITE_KEY: null,
-
-    // [Page Setting]
+    // TURNSTILE_SITE_KEY: 'YOUR_TURNSTILE_KEY', 
     canvas_effect: 'breathingGradientEffect',
     canvas_image_type: 'cover',
     canvas_image_slide: 5,
@@ -102,8 +100,9 @@ const siteConfig = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (typeof PE_V2 !== 'undefined') {
-        PE_V2.registerEffect('breathingGradientEffect', breathingGradientEffect);
-        PE_V2.init(siteConfig);
+    // [V3 Change] Use PE_V3 instead of PE_V2
+    if (typeof PE_V3 !== 'undefined') {
+        PE_V3.registerEffect('breathingGradientEffect', breathingGradientEffect);
+        PE_V3.init(siteConfig);
     }
 });

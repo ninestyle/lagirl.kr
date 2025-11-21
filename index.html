@@ -18,10 +18,19 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdn.9style.com/_inc/express/page-v2.css?update=20251117">
-    <link rel="stylesheet" href="./lay.css?update=20251119">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
+    <!-- [Tier 1] Express Core (필수 엔진) -->
+    <link rel="stylesheet" href="https://cdn.9style.com/_inc/express/express-v2.css">
+    <script src="https://cdn.9style.com/_inc/express/express-v2.js" defer></script>
+
+    <!-- [Tier 2] Page Framework (시리즈) -->
+    <link rel="stylesheet" href="https://cdn.9style.com/_inc/express/page/page-v2.css">
+    <script src="https://cdn.9style.com/_inc/express/page/page-v2.js" defer></script>
+
+    <!-- [Tier 3] User Configuration (사용자) -->
+    <link rel="stylesheet" href="./lay.css?update=20251121">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -213,9 +222,7 @@
                 <p class="pe-section__description" data-lang="media_desc"></p>
                 <div class="pe-grid pe-grid--cols-1">
                     <div class="pe-card">
-                        <!-- Youtube Responsive Container -->
                         <div class="pe-video-responsive">
-                            <!-- Note: Replace 'ysz5S6PUM-U' with your own Youtube Video ID -->
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/w3f22qnQO18?rel=0&modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -267,13 +274,13 @@
                 <p class="pe-section__description" data-lang="contact_desc"></p>
         
                 <form class="pe-form pe-contact-form" autocomplete="off" data-demo-mode="true">
-                    <input type="email" name="email" required class="pe-form__input" data-lang-placeholder="contact_placeholder_email">
+                    <input type="email" name="email" required class="pe-form__input" data-lang-placeholder="ex_placeholder_email">
                     <div class="pe-form__textarea-wrapper">
-                        <textarea name="message" rows="5" required maxlength="1024" class="pe-form__textarea" data-lang-placeholder="contact_placeholder_message"></textarea>
+                        <textarea name="message" rows="5" required maxlength="1024" class="pe-form__textarea" data-lang-placeholder="ex_placeholder_msg"></textarea>
                         <div class="pe-form__char-counter">0/1024</div>
                     </div>
                     <button type="submit" class="pe-form__submit">
-                        <span class="pe-form__text" data-lang="contact_button"></span>
+                        <span class="pe-form__text" data-lang="ex_btn_submit"></span>
                         <span class="pe-form__loader hidden">
                             <span class="material-symbols-outlined animate-spin">progress_activity</span>
                         </span>
@@ -308,7 +315,6 @@
     <div id="turnstile-container" style="position:absolute; top:-9999px; left:-9999px;"></div>
 
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
-    <script src="https://cdn.9style.com/_inc/express/page-v2.js?update=20251117" defer></script>
-    <script src="./lay.js?update=20251118" defer></script>
+    <script src="./lay.js?update=20251121" defer></script>
 </body>
 </html>

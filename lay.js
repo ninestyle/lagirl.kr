@@ -1,6 +1,6 @@
 /*
-    Version: 2.2.1
-    Last Modified: 2025-11-18
+    Version: 2.2.2
+    Last Modified: 2025-11-21
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
 */
@@ -81,6 +81,11 @@ const breathingGradientEffect = {
 };
 
 const siteConfig = {
+    // [Core Setting]
+    language: 'ko',
+    TURNSTILE_SITE_KEY: null,
+
+    // [Page Setting]
     canvas_effect: 'breathingGradientEffect',
     canvas_image_type: 'cover',
     canvas_image_slide: 5,
@@ -93,12 +98,12 @@ const siteConfig = {
     icon_buttons: [
         { name: 'Location', icon: 'location_on', url: '#location' },
         { name: 'Profile', icon: 'mail', url: '#profile' }
-    ],
-
-    TURNSTILE_SITE_KEY: null
+    ]
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    PE_V2.registerEffect('breathingGradientEffect', breathingGradientEffect);
-    PE_V2.init(siteConfig);
+    if (typeof PE_V2 !== 'undefined') {
+        PE_V2.registerEffect('breathingGradientEffect', breathingGradientEffect);
+        PE_V2.init(siteConfig);
+    }
 });

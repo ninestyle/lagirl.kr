@@ -1,6 +1,6 @@
 /*
-    Version: 2.2.5
-    Last Modified: 2025-11-19
+    Version: 3.0.2
+    Last Modified: 2025-11-22
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
 */
@@ -46,6 +46,9 @@
    --ce-text-color: #264653; /* Dark Charcoal for visibility on Light Mode */
    --ce-input-bg-color: rgba(255, 255, 255, 0.12); /* More transparent */
    --ce-input-border-color: transparent; /* No border needed for borderless style */
+   
+   /* V3 Core Loader Customization */
+   --ex-color-accent: #E07A5F;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,6 +89,9 @@
        --ce-text-color: #EBF5F0; /* Light Sage for Dark Mode */
        --ce-input-bg-color: rgba(255, 255, 255, 0.1); /* Subtle white glass on dark */
        --ce-input-border-color: transparent;
+       
+       /* V3 Core Loader Customization */
+       --ex-color-accent: #E07A5F;
    }
 }
 
@@ -147,4 +153,22 @@ body {
 .pe-diet-info strong {
     color: var(--text-headings);
     margin-right: 5px;
+}
+
+/* [V3 Update] Demo Message Style (Renamed from pe-disclaimer-text) */
+.pe-demo-msg {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-align: center;
+    opacity: 0.8;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pe-demo-msg::before {
+    content: '* ';
+    color: var(--text-accent);
 }

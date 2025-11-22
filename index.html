@@ -28,7 +28,7 @@
     <script src="https://cdn.9style.com/_inc/express/page/page-v3.js"></script>
 
     <!-- [Tier 3] User Configuration -->
-    <link rel="stylesheet" href="./lay.css?v=3.0.0">
+    <link rel="stylesheet" href="./lay.css?v=3.0.2">
     
     <script type="application/ld+json">
     {
@@ -75,7 +75,8 @@
             <div class="pe-container">
                 <h2><span class="material-symbols-outlined">self_improvement</span><span data-lang="overview_title"></span></h2>
                 <p class="pe-section__description" data-lang="overview_desc"></p>
-                <p class="pe-disclaimer-text" data-lang="ex_demo_msg_disclaimer"></p>
+                <!-- [V3 Update] Standardized Demo Message -->
+                <p class="pe-demo-msg" data-lang="ex_demo_msg_overview"></p>
             </div>
         </section>
 
@@ -255,7 +256,8 @@
                         <span data-lang="reservation_button"></span>
                     </a>
                 </div>
-                <p class="pe-disclaimer-text" data-lang="ex_demo_msg_information"></p>
+                <!-- [V3 Update] Standardized Demo Message -->
+                <p class="pe-demo-msg" data-lang="ex_demo_msg_profile"></p>
             </div>
         </section>
 
@@ -275,8 +277,9 @@
                     </div>
                     <button type="submit" class="pe-form__submit">
                         <span class="pe-form__text" data-lang="contact_button"></span>
+                        <!-- [V3 Update] Use .ex-loader structure -->
                         <span class="pe-form__loader hidden">
-                            <span class="material-symbols-outlined animate-spin">progress_activity</span>
+                            <span class="ex-loader"></span>
                         </span>
                     </button>
                     <div class="pe-form__status"></div>
@@ -286,11 +289,12 @@
 
         <section id="request" class="pe-section js-fade-in">
             <div class="pe-container">
-                <h2><span class="material-symbols-outlined">auto_awesome</span><span data-lang="ex_demo_request_title"></span></h2>
-                <p class="pe-section__description" data-lang="ex_demo_request_desc"></p>
+                <!-- [V3 Update] Standardized Demo Data Keys -->
+                <h2><span class="material-symbols-outlined">auto_awesome</span><span data-lang="ex_demo_title"></span></h2>
+                <p class="pe-section__description" data-lang="ex_demo_desc"></p>
                 <div class="pe-button-group">
-                    <a href="#" class="pe-button" data-lang-href="demo_request_button_url" rel="noopener noreferrer">
-                        <span data-lang="ex_demo_request_button"></span>
+                    <a href="#" class="pe-button" data-lang-href="ex_demo_button_url" rel="noopener noreferrer">
+                        <span data-lang="ex_demo_button"></span>
                     </a>
                 </div>
             </div>
@@ -298,15 +302,14 @@
     </main>
 
     <footer class="pe-footer">
-        <p class="render-as-html" data-lang="copyright_text"></p>
-        <p><a data-lang-href="footer_credit_url" rel="noopener noreferrer" data-lang="footer_credit_text"></a></p>
+        <p class="render-as-html" data-lang="ex_copyright_text"></p>
+        <p><a data-lang-href="ex_footer_credit_url" rel="noopener noreferrer" data-lang="ex_footer_credit_text"></a></p>
     </footer>
 
     <a href="#home" id="to-top-btn" class="hidden">
         <span class="material-symbols-outlined">arrow_upward</span>
     </a>
     
-    <!-- [V3 Change] Turnstile container is automatically managed by Core -->
-    <script src="./lay.js?v=3.0.0" defer></script>
+    <script src="./lay.js?v=3.0.2" defer></script>
 </body>
 </html>

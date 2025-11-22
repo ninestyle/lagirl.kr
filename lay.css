@@ -1,6 +1,6 @@
 /*
-    Version: 3.0.2
-    Last Modified: 2025-11-22
+    Version: 3.0.3
+    Last Modified: 2025-11-23
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
 */
@@ -171,4 +171,9 @@ body {
 .pe-demo-msg::before {
     content: '* ';
     color: var(--text-accent);
+}
+
+/* [V3.0.3 Fix] Alternating Section Colors controlled by Tier 3 */
+.pe-section:nth-of-type(even) {
+    background-color: var(--bg-secondary);
 }

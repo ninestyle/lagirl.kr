@@ -5,7 +5,6 @@
         "email_address": "lagirl@lagirl.kr",
         "email_href": "mailto:lagirl@lagirl.kr",
         "address_text": "456 S Santa Monica Blvd, Los Angeles, CA 90401, USA",
-        "order_button_url": "#contact",
         "pilates_01_price": "$120 / session",
         "pilates_02_price": "$45 / session",
         "yoga_01_price": "$35 / session",
@@ -88,17 +87,10 @@
         "media_desc": "LA GIRL 대표이자 강사인 강한나님의 인사말입니다.",
         "location_title": "오시는 길",
         "location_label_address": "주소:",
-        "profile_title": "연락처",
         "profile_desc": "궁금한 점은 언제든지 문의하세요.",
         "profile_button_url": "https://app.9style.com/order/lagirl/?lang=ko",
         "contact_label_name": "대표:",
-        "contact_label_email": "이메일:",
-        "contact_title": "문의하기",
-        "contact_desc": "담당자가 확인 후 이메일 또는 전화로 답변 드립니다.",
-        "contact_placeholder_email": "이메일 주소를 입력하세요",
-        "contact_placeholder_message": "문의 내용을 입력하세요 (예: 방문 상담 예약 원합니다)",
-        "contact_button": "메시지 보내기",
-        "order_button": "상담 예약하기"
+        "contact_label_email": "이메일:"
     },
     "en": {
         "site_title": "LA GIRL - LA Women-Only Pilates & Yoga",
@@ -176,16 +168,9 @@
         "media_desc": "A greeting message from LA GIRL’s instructor and CEO, Hanna Kang.",
         "location_title": "Location",
         "location_label_address": "Address:",
-        "profile_title": "Profile",
         "profile_desc": "Feel free to contact us with any questions.",
         "profile_button_url": "https://app.9style.com/order/lagirl/?lang=en",
         "contact_label_name": "Rep:",
-        "contact_label_email": "E-mail:",
-        "contact_title": "Contact Us",
-        "contact_desc": "Our manager will check and respond via email or phone.",
-        "contact_placeholder_email": "Enter your email address",
-        "contact_placeholder_message": "Enter your message (e.g., I'd like to book a consultation)",
-        "contact_button": "Send Message",
-        "order_button": "Book a Consultation"
+        "contact_label_email": "E-mail:"
     }
 }

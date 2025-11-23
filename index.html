@@ -80,7 +80,6 @@
             </div>
         </section>
 
-        <!-- [V3.0.3 Fix] Removed manual class 'pe-section--secondary' -->
         <section id="pilates" class="pe-section js-fade-in">
             <div class="pe-container">
                 <h2><span class="material-symbols-outlined">fitness_center</span><span data-lang="pilates_title"></span></h2>
@@ -177,7 +176,6 @@
             </div>
         </section>
 
-        <!-- [V3.0.3 Fix] Removed manual class 'pe-section--secondary' -->
         <section id="process" class="pe-section js-fade-in">
             <div class="pe-container">
                 <h2><span class="material-symbols-outlined">calendar_month</span><span data-lang="process_title"></span></h2>
@@ -241,7 +239,8 @@
 
         <section id="profile" class="pe-section js-fade-in">
             <div class="pe-container">
-                <h2><span class="material-symbols-outlined">contact_mail</span><span data-lang="profile_title"></span></h2>
+                <!-- [V3 Optimization] Replaced 'profile_title' with Core 'ex_profile_title' -->
+                <h2><span class="material-symbols-outlined">contact_mail</span><span data-lang="ex_profile_title"></span></h2>
                 <p class="pe-section__description" data-lang="profile_desc"></p>
                 <div class="pe-contact-list">
                     <div class="pe-contact-list__item">
@@ -254,33 +253,33 @@
                     </div>
                 </div>
                 <div class="pe-button-group">
+                    <!-- [V3 Optimization] Used 'ex_btn_reservation' from Core -->
                     <a href="#" class="pe-button" data-lang-href="profile_button_url" target="_blank" rel="noopener noreferrer">
-                        <span data-lang="reservation_button"></span>
+                        <span data-lang="ex_btn_reservation"></span>
                     </a>
                 </div>
-                <!-- [V3 Update] Standardized Demo Message -->
                 <p class="pe-demo-msg" data-lang="ex_demo_msg_profile"></p>
             </div>
         </section>
 
-        <!-- [V3.0.3 Fix] Removed manual class 'pe-section--secondary' -->
         <section id="contact" class="pe-section js-fade-in">
             <div class="pe-container">
+                <!-- [V3 Optimization] Replaced 'contact_title'/'contact_desc' with Core Keys -->
                 <h2>
                     <span class="material-symbols-outlined">mail</span>
-                    <span data-lang="contact_title"></span>
+                    <span data-lang="ex_contact_title"></span>
                 </h2>
-                <p class="pe-section__description" data-lang="contact_desc"></p>
+                <p class="pe-section__description" data-lang="ex_contact_desc"></p>
         
                 <form class="pe-form pe-contact-form" autocomplete="off" data-demo-mode="true">
-                    <input type="email" name="email" required class="pe-form__input" data-lang-placeholder="contact_placeholder_email">
+                    <!-- [V3 Optimization] Replaced Placeholders with Core Keys -->
+                    <input type="email" name="email" required class="pe-form__input" data-lang-placeholder="ex_placeholder_email">
                     <div class="pe-form__textarea-wrapper">
-                        <textarea name="message" rows="5" required maxlength="1024" class="pe-form__textarea" data-lang-placeholder="contact_placeholder_message"></textarea>
+                        <textarea name="message" rows="5" required maxlength="1024" class="pe-form__textarea" data-lang-placeholder="ex_placeholder_msg"></textarea>
                         <div class="pe-form__char-counter">0/1024</div>
                     </div>
                     <button type="submit" class="pe-form__submit">
-                        <span class="pe-form__text" data-lang="contact_button"></span>
-                        <!-- [V3 Update] Use .ex-loader structure -->
+                        <span class="pe-form__text" data-lang="ex_btn_submit"></span>
                         <span class="pe-form__loader hidden">
                             <span class="ex-loader"></span>
                         </span>
@@ -292,7 +291,6 @@
 
         <section id="request" class="pe-section js-fade-in">
             <div class="pe-container">
-                <!-- [V3 Update] Standardized Demo Data Keys -->
                 <h2><span class="material-symbols-outlined">auto_awesome</span><span data-lang="ex_demo_title"></span></h2>
                 <p class="pe-section__description" data-lang="ex_demo_desc"></p>
                 <div class="pe-button-group">

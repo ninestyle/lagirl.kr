@@ -1,11 +1,11 @@
 /*
-    Version: 3.2.2 (Refactored for Express V3.2.2)
-    Last Modified: 2025-11-26
+    Version: 3.2.3 (Fixes for Effect & Structure)
+    Last Modified: 2025-11-27
     Author: Maxim
     License: © 2025 Maxim. All Rights Reserved.
 */
 
-// [V3.2.2] Effect logic must be exposed to window and accept a canvas element
+// [V3.2.2] Custom Effect Logic
 window.breathingGradientEffect = function(canvas) {
     const ctx = canvas.getContext('2d');
     let width = 0;
@@ -19,9 +19,11 @@ window.breathingGradientEffect = function(canvas) {
         { r: 255, g: 255, b: 255 }  // White
     ];
 
-    // Style adjustment for the effect layer
-    canvas.style.mixBlendMode = 'multiply';
-    canvas.style.opacity = '0.7';
+    // [FIX] Adjusted blend mode to avoid obscuring the background image
+    // 'multiply' darkens significantly. 'overlay' or 'screen' is better for visibility.
+    // Or remove mixBlendMode and use low opacity.
+    canvas.style.opacity = '0.4'; 
+    canvas.style.pointerEvents = 'none'; // Ensure clicks pass through
 
     const onResize = () => {
         const parent = canvas.parentElement;
@@ -40,7 +42,6 @@ window.breathingGradientEffect = function(canvas) {
 
         ctx.clearRect(0, 0, width, height);
 
-        // Dynamic Radial Gradient
         const grd = ctx.createRadialGradient(
             width / 2, height / 2, 0, 
             width / 2, height / 2, width * (0.6 + breath * 0.4)
@@ -49,20 +50,19 @@ window.breathingGradientEffect = function(canvas) {
         const c1 = colors[0];
         const c2 = colors[1];
         
-        grd.addColorStop(0, `rgba(${c1.r}, ${c1.g}, ${c1.b}, 0.5)`);
-        grd.addColorStop(0.5, `rgba(${c2.r}, ${c2.g}, ${c2.b}, 0.5)`);
+        // Slightly adjusted alpha for subtlety
+        grd.addColorStop(0, `rgba(${c1.r}, ${c1.g}, ${c1.b}, 0.3)`);
+        grd.addColorStop(0.5, `rgba(${c2.r}, ${c2.g}, ${c2.b}, 0.2)`);
         grd.addColorStop(1, `rgba(${c1.r}, ${c1.g}, ${c1.b}, 0)`);
 
         ctx.fillStyle = grd;
         ctx.fillRect(0, 0, width, height);
     };
 
-    // Init
     window.addEventListener('resize', onResize);
     onResize();
     animate();
 
-    // Cleanup hook (optional, if you need to stop animation externally)
     canvas.destroy = () => {
         cancelAnimationFrame(animationFrameId);
         window.removeEventListener('resize', onResize);
@@ -71,13 +71,12 @@ window.breathingGradientEffect = function(canvas) {
 
 const siteConfig = {
     language: 'ko',
-    // TURNSTILE_SITE_KEY: 'YOUR_TURNSTILE_KEY', // Enable for strict security
     
-    // [V3.2.2] API Routing (Centralized)
+    // [Routing]
     API_HOST: 'https://www.lagirl.kr', 
 
     // Wizard Settings
-    canvas_effect: 'breathingGradientEffect', // Matches window function name
+    canvas_effect: 'breathingGradientEffect', 
     canvas_image_type: 'cover',
     canvas_image_slide: 5,
     canvas_image_count: 4,
@@ -96,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof PE_V3 !== 'undefined') {
         PE_V3.init(siteConfig);
 
-        // [Polyfill] Ensure data-lang-href works if Tier 2 missed it
+        // [Polyfill]
         if (typeof Express !== 'undefined' && Express.Util) {
             const util = Express.Util;
             util.$$('[data-lang-href]').forEach(el => {

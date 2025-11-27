@@ -64,8 +64,11 @@
     </nav>
 
     <header id="home" class="pe-header">
-        <!-- [V3.2.2] Core Wizard will automatically use this content or create new -->
-        <div class="ce-branding js-parallax-content">
+        <!-- [FIX] Replaced empty 'ce-branding' with standard 'pe-header__content' -->
+        <!-- Core requires content to act as the Hero section. We explicitly provide the title structure here. -->
+        <div class="pe-header__content js-parallax-content">
+            <h1 class="pe-header__title" data-lang="site_title">LA GIRL</h1>
+            <p class="pe-header__subtitle" data-lang="home_subtitle">Find Your Balance</p>
         </div>
     </header>
 
@@ -165,7 +168,7 @@
                             <img src="./section/promotion/1.webp" alt="동반 등록 할인 이벤트" class="pe-card__image">
                         </div>
                         <div class="pe-card__content">
-                            <span class="pe-card__tag" data-lang="promotion_tag_event"></span>
+                            <span class="pe-card__badge" data-lang="promotion_tag_event"></span>
                             <h3 class="pe-card__title" data-lang="promotion_01_title"></h3>
                             <p class="pe-card__description" data-lang="promotion_01_desc"></p>
                         </div>

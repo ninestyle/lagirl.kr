@@ -2,7 +2,8 @@
     Version: 3.2.0 (Standard)
     Framework: Page Express V3 (Tier 2) + Express Core (Tier 1)
     Last Modified: 2025-11-30
-    Theme: CHUU - Pastel Dream
+    Theme: LA GIRL - Modern Sage & Terracotta
+    License: © 2025 Maxim. All Rights Reserved.
 -->
 <!DOCTYPE html>
 <html lang="ko">
@@ -11,22 +12,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO & Metadata (Data Binding via Core) -->
-    <title data-lang="site_title">CHUU - 주문 제작 케이크 & 쿠키</title>
-    <meta name="description" data-lang="meta_description" content="달콤한 순간을 선물하는 CHUU의 특별한 주문 제작 케이크와 수제 쿠키를 만나보세요.">
-    <link rel="canonical" href="https://www.chuu.kr/">
+    <title data-lang="site_title">LA GIRL - 필라테스 & 요가 스튜디오</title>
+    <meta name="description" data-lang="meta_description" content="LA의 건강한 에너지를 담은 프리미엄 필라테스 & 요가 스튜디오, LA GIRL.">
+    <meta name="keywords" content="LA, 필라테스, 요가, 프라이빗 레슨, 그룹 레슨, LA GIRL, 엘에이걸">
+    <link rel="canonical" href="https://www.lagirl.kr/">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.chuu.kr/">
-    <meta property="og:title" data-lang="og_title" content="CHUU - 주문 제작 케이크 & 쿠키">
-    <meta property="og:description" data-lang="og_description" content="달콤한 순간을 선물하는 CHUU의 특별한 주문 제작 케이크와 수제 쿠키를 만나보세요.">
-    <meta property="og:image" content="./section/home/1.jpg">
-    <meta property="og:site_name" content="CHUU">
+    <meta property="og:url" content="https://www.lagirl.kr/">
+    <meta property="og:title" data-lang="og_title" content="LA GIRL | 필라테스 & 요가 스튜디오">
+    <meta property="og:description" data-lang="og_description" content="LA의 건강한 에너지를 담은 프리미엄 필라테스 & 요가 스튜디오, LA GIRL.">
+    <meta property="og:image" content="./section/home/1.webp">
+    <meta property="og:site_name" content="LA GIRL">
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <!-- [Tier 1] Express Core V3.2 -->
@@ -37,15 +39,36 @@
     <link rel="stylesheet" href="./page-v3.css">
     <script src="./page-v3.js"></script>
 
-    <!-- [Tier 3] User Theme -->
+    <!-- [Tier 3] User Configuration -->
     <link rel="stylesheet" href="./lay.css">
     <script src="./lay.js" defer></script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "LA GIRL Pilates & Yoga",
+      "image": "https://www.lagirl.kr/section/home/1.webp",
+      "description": "LA의 건강한 에너지를 담은 프리미엄 필라테스 & 요가 스튜디오, LA GIRL.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "456 S Santa Monica Blvd",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "postalCode": "90401",
+        "addressCountry": "USA"
+      },
+      "url": "https://www.lagirl.kr/",
+      "telephone": "+1-213-555-0182"
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="pe-nav">
         <div class="pe-nav__container">
-            <a href="#ex-canvas" class="pe-nav__logo" data-lang="domain_brand">CHUU</a>
+            <a href="#ex-canvas" class="pe-nav__logo" data-lang="logo_text">LA GIRL</a>
             <div class="pe-nav__buttons">
                 <!-- [Core Binding] Language Switcher -->
                 <div id="ex-lang"></div>
@@ -67,27 +90,104 @@
         <!-- Overview -->
         <section id="overview" class="pe-section js-fade-in">
             <div class="pe-container">
-                <h2>
-                    <span translate="no" class="material-symbols-outlined notranslate">cake</span>
-                    <span data-lang="overview_title"></span>
-                </h2>
+                <h2><span translate="no" class="material-symbols-outlined notranslate">self_improvement</span><span data-lang="overview_title"></span></h2>
                 <p class="pe-section__description" data-lang="overview_desc"></p>
                 <p class="pe-demo-msg" data-lang="ex_demo_msg_overview"></p>
             </div>
         </section>
 
-        <!-- Promotion -->
-        <section id="promotion" class="pe-section js-fade-in pe-section--dynamic" style="background-image: url('./section/promotion/bg.jpg');">
-            <!-- Core Canvas overlay handles header, but sections use manual overlay -->
+        <!-- Pilates -->
+        <section id="pilates" class="pe-section js-fade-in">
+            <div class="pe-container">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">fitness_center</span><span data-lang="pilates_title"></span></h2>
+                <p class="pe-section__description" data-lang="pilates_desc"></p>
+                <div class="pe-grid">
+                    <div class="pe-card">
+                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/pilates/1.webp" alt="Private Lesson" class="pe-card__image"></div>
+                        <div class="pe-card__content">
+                            <h3 class="pe-card__title" data-lang="pilates_01_title"></h3>
+                            <p class="pe-card__description" data-lang="pilates_01_desc"></p>
+                            <div class="pe-product-list" data-content-type="product" data-prefix="pilates_01_option" data-dynamic-area></div>
+                        </div>
+                        <div class="pe-price-info">
+                            <div class="pe-price-info__item">
+                                <span class="pe-price-info__label" data-lang="pricing_base_fee_label"></span>
+                                <span class="pe-price-info__value" data-lang="pilates_01_price"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pe-card">
+                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/pilates/2.webp" alt="Group Lesson" class="pe-card__image"></div>
+                        <div class="pe-card__content">
+                            <h3 class="pe-card__title" data-lang="pilates_02_title"></h3>
+                            <p class="pe-card__description" data-lang="pilates_02_desc"></p>
+                            <div class="pe-product-list" data-content-type="product" data-prefix="pilates_02_option" data-dynamic-area></div>
+                        </div>
+                        <div class="pe-price-info">
+                            <div class="pe-price-info__item">
+                                <span class="pe-price-info__label" data-lang="pricing_base_fee_label"></span>
+                                <span class="pe-price-info__value" data-lang="pilates_02_price"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yoga -->
+        <section id="yoga" class="pe-section js-fade-in">
+            <div class="pe-container">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">spa</span><span data-lang="yoga_title"></span></h2>
+                <p class="pe-section__description" data-lang="yoga_desc"></p>
+                <div class="pe-grid">
+                    <div class="pe-card">
+                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/yoga/1.webp" alt="Vinyasa Yoga" class="pe-card__image"></div>
+                        <div class="pe-card__content">
+                            <h3 class="pe-card__title" data-lang="yoga_01_title"></h3>
+                            <p class="pe-card__description" data-lang="yoga_01_desc"></p>
+                            <div class="pe-product-list" data-content-type="product" data-prefix="yoga_01_option" data-dynamic-area></div>
+                        </div>
+                        <div class="pe-price-info">
+                            <div class="pe-price-info__item">
+                                <span class="pe-price-info__label" data-lang="pricing_base_fee_label"></span>
+                                <span class="pe-price-info__value" data-lang="yoga_01_price"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pe-card">
+                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/yoga/2.webp" alt="Healing Yoga" class="pe-card__image"></div>
+                        <div class="pe-card__content">
+                            <h3 class="pe-card__title" data-lang="yoga_02_title"></h3>
+                            <p class="pe-card__description" data-lang="yoga_02_desc"></p>
+                            <div class="pe-product-list" data-content-type="product" data-prefix="yoga_02_option" data-dynamic-area></div>
+                        </div>
+                        <div class="pe-price-info">
+                            <div class="pe-price-info__item">
+                                <span class="pe-price-info__label" data-lang="pricing_base_fee_label"></span>
+                                <span class="pe-price-info__value" data-lang="yoga_02_price"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="pe-faq-container">
+                    <h3 class="pe-faq-title" data-lang="faq_title"></h3>
+                    <!-- Dynamic FAQ Injection -->
+                    <div class="pe-faq-list" data-content-type="faq" data-prefix="faq_common" data-dynamic-area></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Promotion (Parallax) -->
+        <section id="promotion" class="pe-section js-fade-in pe-section--dynamic" style="background-image: url('./section/promotion/1.webp');">
             <div class="pe-overlay pe-overlay--dotted"></div>
             <div class="pe-container">
                 <div class="pe-grid pe-grid--cols-1">
                     <div class="pe-card pe-card--horizontal">
                         <div class="pe-card__image-wrapper">
-                            <img src="./section/promotion/01.jpg" alt="Promotion" class="pe-card__image">
+                            <img src="./section/promotion/1.webp" alt="Promotion" class="pe-card__image">
                         </div>
                         <div class="pe-card__content">
-                            <span class="pe-card__tag">Event</span>
+                            <span class="pe-card__tag" data-lang="promotion_tag_event"></span>
                             <h3 class="pe-card__title" data-lang="promotion_01_title"></h3>
                             <p class="pe-card__description" data-lang="promotion_01_desc"></p>
                         </div>
@@ -96,183 +196,50 @@
             </div>
         </section>
 
-        <!-- Cookies (Slider) -->
-        <section id="cookies" class="pe-section js-fade-in section-divider to-secondary">
-            <div class="pe-container">
-                <h2><span translate="no" class="material-symbols-outlined notranslate">cookie</span><span data-lang="cookies_title"></span></h2>
-                <p class="pe-section__description" data-lang="cookies_desc"></p>
-                
-                <div class="pe-slider js-content-slider">
-                    <div class="pe-slider__wrapper">
-                        <!-- Dynamic Content? Or Static HTML? Keeping Static for custom layout control -->
-                        <div class="pe-slider__item">
-                            <div class="pe-card">
-                                <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/cookies/01.jpg" alt="Cookie 01" class="pe-card__image"></div>
-                                <div class="pe-card__content">
-                                    <h3 class="pe-card__title" data-lang="cookies_01_title"></h3>
-                                    <p class="pe-card__description" data-lang="cookies_01_desc"></p>
-                                </div>
-                                <div class="pe-price-info">
-                                     <div class="pe-price-info__item">
-                                        <span class="pe-price-info__label" data-lang="cookies_price_label_3pack"></span>
-                                        <span class="pe-price-info__value" data-lang="cookies_01_price_3pack"></span>
-                                    </div>
-                                    <div class="pe-price-info__item">
-                                        <span class="pe-price-info__label" data-lang="cookies_price_label_6pack"></span>
-                                        <span class="pe-price-info__value" data-lang="cookies_01_price_6pack"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pe-slider__item">
-                            <div class="pe-card">
-                                <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/cookies/02.jpg" alt="Cookie 02" class="pe-card__image"></div>
-                                <div class="pe-card__content">
-                                    <h3 class="pe-card__title" data-lang="cookies_02_title"></h3>
-                                    <p class="pe-card__description" data-lang="cookies_02_desc"></p>
-                                </div>
-                                 <div class="pe-price-info">
-                                     <div class="pe-price-info__item">
-                                        <span class="pe-price-info__label" data-lang="cookies_price_label_3pack"></span>
-                                        <span class="pe-price-info__value" data-lang="cookies_02_price_3pack"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="pe-slider__item">
-                            <div class="pe-card">
-                                <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/cookies/03.jpg" alt="Cookie 03" class="pe-card__image"></div>
-                                <div class="pe-card__content">
-                                    <h3 class="pe-card__title" data-lang="cookies_03_title"></h3>
-                                    <p class="pe-card__description" data-lang="cookies_03_desc"></p>
-                                </div>
-                                 <div class="pe-price-info">
-                                     <div class="pe-price-info__item">
-                                        <span class="pe-price-info__label" data-lang="cookies_price_label_10pack"></span>
-                                        <span class="pe-price-info__value" data-lang="cookies_03_price_10pack"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pe-slider__nav">
-                        <button class="pe-slider__nav-button pe-slider--prev" aria-label="Previous"><span class="material-symbols-outlined">arrow_back</span></button>
-                        <button class="pe-slider__nav-button pe-slider--next" aria-label="Next"><span class="material-symbols-outlined">arrow_forward</span></button>
-                    </div>
-                </div>
-                
-                <div class="pe-faq-container">
-                    <h3 class="pe-faq-title" data-lang="faq_title">FAQ</h3>
-                    <!-- Dynamic FAQ Injection -->
-                    <div class="pe-faq-list" data-content-type="faq" data-prefix="faq_cookie" data-dynamic-area></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Cakes -->
-        <section id="cakes" class="pe-section js-fade-in section-divider to-primary">
-            <div class="pe-container">
-                <h2><span translate="no" class="material-symbols-outlined notranslate">brush</span><span data-lang="cakes_title"></span></h2>
-                <p class="pe-section__description" data-lang="cakes_desc"></p>
-                <div class="pe-grid">
-                    <div class="pe-card">
-                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/cakes/01.jpg" alt="Lettering Cake" class="pe-card__image"></div>
-                        <div class="pe-card__content">
-                            <h3 class="pe-card__title" data-lang="cakes_lettering_title"></h3>
-                            <p class="pe-card__description" data-lang="cakes_lettering_desc"></p>
-                            <!-- Dynamic Product Options -->
-                            <div class="pe-product-list" data-content-type="product" data-prefix="cake_lettering_option" data-dynamic-area></div>
-                        </div>
-                        <div class="pe-price-info">
-                            <div class="pe-price-info__item">
-                                <span class="pe-price-info__label" data-lang="pricing_base_fee_label"></span>
-                                <span class="pe-price-info__value" data-lang="cake_lettering_base_price"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pe-card">
-                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/cakes/02.jpg" alt="Photo Cake" class="pe-card__image"></div>
-                        <div class="pe-card__content">
-                            <h3 class="pe-card__title" data-lang="cakes_photo_title"></h3>
-                            <p class="pe-card__description" data-lang="cakes_photo_desc"></p>
-                            <div class="pe-product-list" data-content-type="product" data-prefix="cake_photo_option" data-dynamic-area></div>
-                        </div>
-                        <div class="pe-price-info">
-                            <div class="pe-price-info__item">
-                                <span class="pe-price-info__label" data-lang="pricing_base_fee_label"></span>
-                                <span class="pe-price-info__value" data-lang="cake_photo_base_price"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pe-card">
-                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/cakes/03.jpg" alt="3D Cake" class="pe-card__image"></div>
-                        <div class="pe-card__content">
-                            <h3 class="pe-card__title" data-lang="cakes_3d_title"></h3>
-                            <p class="pe-card__description" data-lang="cakes_3d_desc"></p>
-                            <div class="pe-product-list" data-content-type="product" data-prefix="cake_3d_option" data-dynamic-area></div>
-                        </div>
-                        <div class="pe-price-info">
-                            <div class="pe-price-info__item">
-                                <span class="pe-price-info__label" data-lang="pricing_base_fee_label"></span>
-                                <span class="pe-price-info__value" data-lang="cake_3d_base_price"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pe-faq-container">
-                    <h3 class="pe-faq-title" data-lang="faq_title">FAQ</h3>
-                    <div class="pe-faq-list" data-content-type="faq" data-prefix="faq_cake" data-dynamic-area></div>
-                </div>
-            </div>
-        </section>
-
         <!-- Process -->
-        <section id="process" class="pe-section js-fade-in section-divider to-secondary">
+        <section id="process" class="pe-section js-fade-in">
             <div class="pe-container">
-                <h2><span translate="no" class="material-symbols-outlined notranslate">list_alt</span><span data-lang="process_title"></span></h2>
+                <h2><span translate="no" class="material-symbols-outlined notranslate">calendar_month</span><span data-lang="process_title"></span></h2>
                 <p class="pe-section__description" data-lang="process_desc"></p>
                 <div class="pe-process-grid">
                     <div class="pe-process-item">
-                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">edit_square</span></div>
+                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">spa</span></div>
                         <h3 class="pe-process-item__title" data-lang="process_01_title"></h3>
                         <p class="pe-process-item__description" data-lang="process_01_desc"></p>
                     </div>
                     <div class="pe-process-item">
-                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">draw</span></div>
+                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">fitness_center</span></div>
                         <h3 class="pe-process-item__title" data-lang="process_02_title"></h3>
                         <p class="pe-process-item__description" data-lang="process_02_desc"></p>
                     </div>
                     <div class="pe-process-item">
-                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">bakery_dining</span></div>
+                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">local_fire_department</span></div>
                         <h3 class="pe-process-item__title" data-lang="process_03_title"></h3>
                         <p class="pe-process-item__description" data-lang="process_03_desc"></p>
                     </div>
                      <div class="pe-process-item">
-                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">redeem</span></div>
+                        <div class="pe-process-item__icon"><span class="material-symbols-outlined">self_improvement</span></div>
                         <h3 class="pe-process-item__title" data-lang="process_04_title"></h3>
                         <p class="pe-process-item__description" data-lang="process_04_desc"></p>
                     </div>
                 </div>
-                <div class="pe-button-group">
-                    <a href="#" class="pe-button" data-lang-href="order_button_url" rel="noopener noreferrer">
-                        <span data-lang="order_button"></span>
-                    </a>
+                
+                <div class="pe-diet-info">
+                    <p><strong data-lang="diet_info_conditions_label"></strong> <span data-lang="diet_info_conditions"></span></p>
+                    <p><strong data-lang="diet_info_cost_label"></strong> <span data-lang="diet_info_cost"></span></p>
                 </div>
             </div>
         </section>
 
         <!-- Media -->
-        <section id="media" class="pe-section js-fade-in section-divider to-primary">
+        <section id="media" class="pe-section js-fade-in">
             <div class="pe-container">
                 <h2><span translate="no" class="material-symbols-outlined notranslate">smart_display</span><span data-lang="media_title"></span></h2>
                 <p class="pe-section__description" data-lang="media_desc"></p>
                 <div class="pe-grid pe-grid--cols-1">
                     <div class="pe-card">
-                        <!-- Video is wrapped in pe-video-responsive by user CSS if needed, or core utility -->
                         <div class="pe-video-responsive">
-                            <video class="pe-card__video" controls poster="./section/media/01.jpg" src="./section/media/01.mp4">
-                                Your browser does not support the video element.
-                            </video>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/w3f22qnQO18?rel=0&modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -280,11 +247,11 @@
         </section>
 
         <!-- Location -->
-        <section id="location" class="pe-section js-fade-in section-divider to-secondary">
+        <section id="location" class="pe-section js-fade-in">
             <div class="pe-container">
                 <h2><span translate="no" class="material-symbols-outlined notranslate">location_on</span><span data-lang="location_title"></span></h2>
                 <div class="pe-map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.689154412275!2d-118.2562447889396!3d34.05199927304996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c64848905333%3A0x4549452dfa14a635!2sU.S.%20Bank%20Tower!5e0!3m2!1sko!2skr!4v1719957863588!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.109918231365!2d-118.49413938478441!3d34.06673898060143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d1f2c0f6b1%3A0x7e0b23b123f1a9a8!2s456%20Santa%20Monica%20Blvd%2C%20Santa%20Monica%2C%20CA%2090401%2C%20USA!5e0!3m2!1sko!2skr!4v1678888888888!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="pe-address-block">
                     <p><strong data-lang="location_label_address"></strong> <span data-lang="address_text"></span></p>
@@ -293,9 +260,9 @@
         </section>
 
         <!-- Profile -->
-        <section id="profile" class="pe-section js-fade-in section-divider to-primary">
+        <section id="profile" class="pe-section js-fade-in">
             <div class="pe-container">
-                <h2><span translate="no" class="material-symbols-outlined notranslate">contact_mail</span><span data-lang="profile_title"></span></h2>
+                <h2><span translate="no" class="material-symbols-outlined notranslate">contact_mail</span><span data-lang="ex_profile_title"></span></h2>
                 <p class="pe-section__description" data-lang="profile_desc"></p>
                 <div class="pe-contact-list">
                     <div class="pe-contact-list__item">
@@ -304,15 +271,20 @@
                     </div>
                     <div class="pe-contact-list__item">
                         <strong class="pe-contact-list__label" data-lang="contact_label_email"></strong>
-                        <a href="mailto:chuu@chuu.kr" class="pe-contact-list__value" data-lang="email_address" data-lang-href="email_href"></a>
+                        <a href="mailto:hello@lagirl.kr" class="pe-contact-list__value" data-lang="email_address" data-lang-href="email_href"></a>
                     </div>
+                </div>
+                <div class="pe-button-group">
+                    <a href="#" class="pe-button" data-lang-href="profile_button_url" target="_blank" rel="noopener noreferrer">
+                        <span data-lang="ex_btn_reservation"></span>
+                    </a>
                 </div>
                 <p class="pe-demo-msg" data-lang="ex_demo_msg_profile"></p>
             </div>
         </section>
 
         <!-- Contact Form (Core Binding) -->
-        <section id="contact" class="pe-section js-fade-in section-divider to-secondary">
+        <section id="contact" class="pe-section js-fade-in">
             <div class="pe-container">
                 <h2>
                     <span translate="no" class="material-symbols-outlined notranslate">mail</span>
@@ -320,33 +292,19 @@
                 </h2>
                 <p class="pe-section__description" data-lang="ex_contact_desc"></p>
                 
-                <!-- [Core Binding] Auto-generates form with validation & API -->
+                <!-- [Core Binding] Auto-generates form -->
                 <div id="ex-contact"></div>
             </div>
         </section>
 
-        <!-- Search Form (Core Binding) -->
-        <section id="search" class="pe-section js-fade-in section-divider to-primary">
-            <div class="pe-container">
-                <h2>
-                    <span translate="no" class="material-symbols-outlined notranslate">search</span>
-                    <span data-lang="ex_search_title"></span>
-                </h2>
-                <p class="pe-section__description" data-lang="ex_search_desc"></p>
-
-                <!-- [Core Binding] Auto-generates search form & result area -->
-                <div id="ex-search"></div>
-            </div>
-        </section>
-
-        <!-- Demo/Request -->
+        <!-- Request / Demo -->
         <section id="demo" class="pe-section js-fade-in">
             <div class="pe-container">
                 <h2><span translate="no" class="material-symbols-outlined notranslate">auto_awesome</span><span data-lang="ex_demo_title"></span></h2>
                 <p class="pe-section__description" data-lang="ex_demo_desc"></p>
                 <div class="pe-button-group">
                     <a href="#" class="pe-button" data-lang="ex_demo_button" data-lang-href="ex_demo_button_url" rel="noopener noreferrer">
-                        문의하기
+                        <span data-lang="ex_demo_button"></span>
                     </a>
                 </div>
             </div>
@@ -357,7 +315,7 @@
     <footer class="pe-footer">
         <div class="pe-container">
             <p class="render-as-html" data-lang="ex_copyright_text"></p>
-            <p><a data-lang-href="ex_footer_credit_url" rel="noopener noreferrer" data-lang="ex_footer_credit_text">Powered by Maxim</a></p>
+            <p><a data-lang-href="ex_footer_credit_url" rel="noopener noreferrer" data-lang="ex_footer_credit_text"></a></p>
         </div>
     </footer>
 

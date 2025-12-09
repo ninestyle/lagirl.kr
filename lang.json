@@ -9,19 +9,14 @@
         "pilates_02_price": "$45 / session",
         "yoga_01_price": "$35 / session",
         "yoga_02_price": "$30 / session",
-        "pricing_base_fee_label": "1회 기준",
-        "ex_demo_title": "Express Series",
-        "ex_demo_desc": "Demo Mode Active",
-        "ex_demo_button": "Explore More",
-        "ex_demo_button_url": "#"
+        "pricing_base_fee_label": "1회 기준"
     },
     "ko": {
         "site_title": "LA GIRL - 여성 전용 필라테스 & 요가",
-        "ex_title": "LA GIRL",
-        "ex_description": "균형을 찾고, 흐름을 느껴보세요.",
         "meta_description": "여성 전용 필라테스 & 요가 스튜디오, LA GIRL. 여성의 몸과 마음에 최적화된 전문 레슨을 경험하세요.",
         "og_title": "LA GIRL - 여성 전용 필라테스 & 요가",
         "og_description": "여성 전용 필라테스 & 요가 스튜디오, LA GIRL. 여성의 몸과 마음에 최적화된 전문 레슨을 경험하세요.",
+        "home_subtitle": "균형을 찾고, 흐름을 느껴보세요.",
         "overview_title": "LA 여성들의 건강한 에너지, LA GIRL",
         "overview_desc": "LA GIRL은 여성 전용 스튜디오로, 여성의 몸에 대한 깊은 이해를 바탕으로 프라이빗한 공간에서 몸과 마음의 완벽한 균형을 찾는 여정을 안내합니다.",
         "pilates_title": "필라테스 프로그램",
@@ -92,24 +87,17 @@
         "media_desc": "LA GIRL 대표이자 강사인 강한나님의 인사말입니다.",
         "location_title": "오시는 길",
         "location_label_address": "주소:",
-        "ex_profile_title": "연락처",
         "profile_desc": "궁금한 점은 언제든지 문의하세요.",
         "profile_button_url": "https://app.9style.com/order/lagirl/?lang=ko",
         "contact_label_name": "대표:",
-        "contact_label_email": "이메일:",
-        "ex_btn_reservation": "예약하기",
-        "ex_btn_submit": "전송",
-        "ex_demo_msg_overview": "※ 시연용 가상 사이트입니다.",
-        "ex_demo_msg_profile": "※ 프로필 정보는 예시입니다.",
-        "ex_demo_link_warning": "이 링크는 예시이며 실제 동작하지 않습니다."
+        "contact_label_email": "이메일:"
     },
     "en": {
         "site_title": "LA GIRL - LA Women-Only Pilates & Yoga",
-        "ex_title": "LA GIRL",
-        "ex_description": "Find Your Balance, Feel the Vibe.",
         "meta_description": "LA GIRL, a women-only Pilates & Yoga studio in LA. Experience expert lessons optimized for women's body and mind.",
         "og_title": "LA GIRL - LA Women-Only Pilates & Yoga",
         "og_description": "LA GIRL, a women-only Pilates & Yoga studio in LA. Experience expert lessons optimized for women's body and mind.",
+        "home_subtitle": "Find Your Balance, Feel the Vibe.",
         "overview_title": "The Healthy Vibe for LA Women, LA GIRL",
         "overview_desc": "LA GIRL is a women-only studio located in LA, guiding you on a journey to find perfect balance in a private, empowering space based on a deep understanding of the female body.",
         "pilates_title": "Pilates Programs",
@@ -180,15 +168,9 @@
         "media_desc": "A greeting message from LA GIRL’s instructor and CEO, Hanna Kang.",
         "location_title": "Location",
         "location_label_address": "Address:",
-        "ex_profile_title": "Profile",
         "profile_desc": "Feel free to contact us with any questions.",
         "profile_button_url": "https://app.9style.com/order/lagirl/?lang=en",
         "contact_label_name": "Rep:",
-        "contact_label_email": "E-mail:",
-        "ex_btn_reservation": "Make Reservation",
-        "ex_btn_submit": "Submit",
-        "ex_demo_msg_overview": "※ This is a virtual demo site.",
-        "ex_demo_msg_profile": "※ Profile info is for example only.",
-        "ex_demo_link_warning": "This link is an example."
+        "contact_label_email": "E-mail:"
     }
 }

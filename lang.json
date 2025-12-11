@@ -89,8 +89,8 @@
         "media_desc": "LA GIRL 대표이자 강사인 강한나님의 인사말입니다.",
         "location_title": "오시는 길",
         "location_label_address": "주소:",
+        "profile_title": "연락처",
         "profile_desc": "궁금한 점은 언제든지 문의하세요.",
-        "profile_button_url": "https://app.9style.com/order/lagirl/?lang=ko",
         "contact_label_name": "대표:",
         "contact_label_email": "이메일:"
     },
@@ -171,8 +171,8 @@
         "media_desc": "A greeting message from LA GIRL’s instructor and CEO, Hanna Kang.",
         "location_title": "Location",
         "location_label_address": "Address:",
+        "profile_title": "Profile",
         "profile_desc": "Feel free to contact us with any questions.",
-        "profile_button_url": "https://app.9style.com/order/lagirl/?lang=en",
         "contact_label_name": "Rep:",
         "contact_label_email": "E-mail:"
     }

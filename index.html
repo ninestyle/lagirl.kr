@@ -4,58 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- SEO & Metadata -->
     <title data-lang="site_title">LA GIRL - 필라테스 & 요가 스튜디오</title>
     <meta name="description" data-lang="meta_description" content="LA의 건강한 에너지를 담은 프리미엄 필라테스 & 요가 스튜디오, LA GIRL. 당신의 몸과 마음의 균형을 찾아보세요.">
     <meta name="keywords" content="LA, 필라테스, 요가, 프라이빗 레슨, 그룹 레슨, LA GIRL, 엘에이걸">
+    <link rel="canonical" href="https://www.lagirl.kr/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.lagirl.kr/">
-    <meta property="og:title" data-lang="og_title" content="LA GIRL | 필라테스 & 요가 스튜디오">
-    <meta property="og:description" data-lang="og_description" content="LA의 건강한 에너지를 담은 프리미엄 필라테스 & 요가 스튜디오, LA GIRL. 당신의 몸과 마음의 균형을 찾아보세요.">
-    <meta property="og:image" content="https://www.lagirl.kr/section/home/1.webp">
-    <meta name="author" content="Maxim">
-	<link rel="author" href="https://www.maxim.pe.kr">
-    <link rel="canonical" href="https://www.lagirl.kr/">
+    <meta property="og:title" data-lang="og_title" content="LA GIRL">
+    <meta property="og:description" data-lang="og_description" content="LA의 건강한 에너지를 담은 프리미엄 필라테스 & 요가 스튜디오, LA GIRL.">
+    <meta property="og:image" content="./section/home/1.webp">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts (CHUU Reference: Gowun Dodum added) -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gowun+Dodum&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
-    <!-- [Tier 1] Express Core (필수 엔진) -->
-    <link rel="stylesheet" href="https://cdn.9style.com/_inc/express/express-v3.css">
-    <script src="https://cdn.9style.com/_inc/express/express-v3.js" defer></script>
+    <!-- [Tier 1] Express Core V4 -->
+    <link rel="stylesheet" href="https://cdn.sigonggan.com/_inc/express/v4/express-v4.css">
+    <script src="https://cdn.sigonggan.com/_inc/express/v4/express-v4.js" defer></script>
 
-    <!-- [Tier 2] Page Framework (시리즈) -->
-    <link rel="stylesheet" href="https://cdn.9style.com/_inc/express/page/page-v3.css">
-    <script src="https://cdn.9style.com/_inc/express/page/page-v3.js" defer></script>
+    <!-- [Tier 2] Page Framework V4 -->
+    <link rel="stylesheet" href="https://cdn.sigonggan.com/_inc/express/v4/page-v4.css">
+    <script src="https://cdn.sigonggan.com/_inc/express/v4/page-v4.js" defer></script>
 
-    <!-- [Tier 3] User Configuration (사용자) -->
-    <link rel="stylesheet" href="./lay.css?update=20251121">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SportsActivityLocation",
-      "name": "LA GIRL Pilates & Yoga",
-      "image": "https://www.lagirl.kr/section/home/1.webp",
-      "description": "LA의 건강한 에너지를 담은 프리미엄 필라테스 & 요가 스튜디오, LA GIRL. 당신의 몸과 마음의 균형을 찾아보세요.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "456 S Santa Monica Blvd",
-        "addressLocality": "Los Angeles",
-        "addressRegion": "CA",
-        "postalCode": "90401",
-        "addressCountry": "USA"
-      },
-      "url": "https://www.lagirl.kr/",
-      "telephone": "+1-213-555-0182",
-      "openingHours": "Mo-Fr 08:00-22:00, Sa 09:00-17:00",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "hello@lagirl.kr",
-        "contactType": "customer service"
-      }
-    }
-    </script>
+    <!-- [Tier 3] User Configuration -->
+    <link rel="stylesheet" href="./lay.css?ver=4.0.1">
+    <script src="./lay.js?ver=4.0.1" defer></script>
 </head>
 <body>
     <nav class="pe-nav">
@@ -78,22 +54,45 @@
     </header>
 
     <main>
-        <section id="overview" class="pe-section js-fade-in">
-            <div class="pe-container">
-                <h2><span class="material-symbols-outlined">self_improvement</span><span data-lang="overview_title"></span></h2>
+        <section id="overview" class="pe-section">
+            <div class="pe-container js-fade-in">
+                <h2>
+                    <span translate="no" class="material-symbols-outlined notranslate">self_improvement</span>
+                    <span data-lang="overview_title"></span>
+                </h2>
                 <p class="pe-section__description" data-lang="overview_desc"></p>
-                <p class="pe-disclaimer-text" data-lang="demo_msg_disclaimer"></p>
+                <p class="pe-demo-msg" data-lang="ex_demo_msg_overview"></p>
             </div>
         </section>
 
-        <section id="pilates" class="pe-section js-fade-in pe-section--secondary section-divider to-primary">
-            <div class="pe-container">
-                <h2><span class="material-symbols-outlined">fitness_center</span><span data-lang="pilates_title"></span></h2>
-                <p class="pe-section__description" data-lang="pilates_desc"></p>
-                <div class="pe-grid">
-                    <div class="pe-card">
-                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/pilates/1.webp" alt="1:1 프라이빗 필라테스 레슨 이미지" class="pe-card__image"></div>
+        <section id="promotion" class="pe-section pe-section--parallax" style="background-image: url('./section/promotion/1.webp');">
+            <div class="pe-overlay pe-overlay--dotted"></div>
+            <div class="pe-container js-fade-in">
+                <div class="pe-grid pe-grid--cols-1">
+                    <div class="pe-card pe-card--horizontal">
+                        <div class="pe-card__image-wrapper">
+                            <img src="./section/promotion/1.webp" alt="Promotion" class="pe-card__image">
+                        </div>
                         <div class="pe-card__content">
+                            <span class="pe-card__tag" data-lang="promotion_tag_event"></span>
+                            <h3 class="pe-card__title" data-lang="promotion_01_title"></h3>
+                            <p class="pe-card__description" data-lang="promotion_01_desc"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pilates" class="pe-section section-divider to-secondary">
+            <div class="pe-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">fitness_center</span><span data-lang="pilates_title"></span></h2>
+                <p class="pe-section__description" data-lang="pilates_desc"></p>
+
+                <div class="pe-grid pe-grid--cols-2">
+                    <div class="pe-card">
+                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/pilates/1.webp" alt="1:1 Pilates" class="pe-card__image"></div>
+                        <div class="pe-card__content">
+                            <span class="pe-card__tag">Premium</span>
                             <h3 class="pe-card__title" data-lang="pilates_01_title"></h3>
                             <p class="pe-card__description" data-lang="pilates_01_desc"></p>
                             <div class="pe-product-list" data-content-type="product" data-prefix="pilates_01_option"></div>
@@ -106,8 +105,9 @@
                         </div>
                     </div>
                     <div class="pe-card">
-                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/pilates/2.webp" alt="6:1 그룹 필라테스 레슨 이미지" class="pe-card__image"></div>
+                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/pilates/2.webp" alt="Group Pilates" class="pe-card__image"></div>
                         <div class="pe-card__content">
+                            <span class="pe-card__tag">Popular</span>
                             <h3 class="pe-card__title" data-lang="pilates_02_title"></h3>
                             <p class="pe-card__description" data-lang="pilates_02_desc"></p>
                             <div class="pe-product-list" data-content-type="product" data-prefix="pilates_02_option"></div>
@@ -123,13 +123,13 @@
             </div>
         </section>
 
-        <section id="yoga" class="pe-section js-fade-in section-divider to-secondary">
-            <div class="pe-container">
-                <h2><span class="material-symbols-outlined">spa</span><span data-lang="yoga_title"></span></h2>
+        <section id="yoga" class="pe-section section-divider to-primary">
+            <div class="pe-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">spa</span><span data-lang="yoga_title"></span></h2>
                 <p class="pe-section__description" data-lang="yoga_desc"></p>
-                <div class="pe-grid">
+                <div class="pe-grid pe-grid--cols-2">
                     <div class="pe-card">
-                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/yoga/1.webp" alt="빈야사 요가 클래스 이미지" class="pe-card__image"></div>
+                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/yoga/1.webp" alt="Vinyasa Yoga" class="pe-card__image"></div>
                         <div class="pe-card__content">
                             <h3 class="pe-card__title" data-lang="yoga_01_title"></h3>
                             <p class="pe-card__description" data-lang="yoga_01_desc"></p>
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                     <div class="pe-card">
-                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/yoga/2.webp" alt="힐링 요가 클래스 이미지" class="pe-card__image"></div>
+                        <div class="pe-card__image-wrapper js-lightbox-trigger"><img src="./section/yoga/2.webp" alt="Healing Yoga" class="pe-card__image"></div>
                         <div class="pe-card__content">
                             <h3 class="pe-card__title" data-lang="yoga_02_title"></h3>
                             <p class="pe-card__description" data-lang="yoga_02_desc"></p>
@@ -157,34 +157,16 @@
                         </div>
                     </div>
                 </div>
-                 <div class="pe-faq-container">
-                    <h3 class="pe-faq-title" data-lang="faq_title"></h3>
+                <div class="pe-faq-container">
+                    <h3 class="pe-faq-title" data-lang="faq_title">FAQ</h3>
                     <div class="pe-faq-list" data-content-type="faq" data-prefix="faq_common"></div>
                 </div>
             </div>
         </section>
-        
-        <section id="promotion" class="pe-section js-fade-in pe-section--dynamic" style="background-image: url('./section/promotion/1.webp');">
-            <div class="pe-overlay pe-overlay--dotted"></div>
-            <div class="pe-container">
-                <div class="pe-grid pe-grid--cols-1">
-                    <div class="pe-card pe-card--horizontal">
-                        <div class="pe-card__image-wrapper">
-                            <img src="./section/promotion/1.webp" alt="동반 등록 할인 이벤트 프로모션 이미지" class="pe-card__image">
-                        </div>
-                        <div class="pe-card__content">
-                            <span class="pe-card__tag" data-lang="promotion_tag_event"></span>
-                            <h3 class="pe-card__title" data-lang="promotion_01_title"></h3>
-                            <p class="pe-card__description" data-lang="promotion_01_desc"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="process" class="pe-section js-fade-in section-divider to-primary">
-            <div class="pe-container">
-                <h2><span class="material-symbols-outlined">calendar_month</span><span data-lang="process_title"></span></h2>
+        <section id="process" class="pe-section section-divider to-secondary">
+            <div class="pe-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">calendar_month</span><span data-lang="process_title"></span></h2>
                 <p class="pe-section__description" data-lang="process_desc"></p>
                 <div class="pe-process-grid">
                     <div class="pe-process-item">
@@ -208,7 +190,6 @@
                         <p class="pe-process-item__description" data-lang="process_04_desc"></p>
                     </div>
                 </div>
-                
                 <div class="pe-diet-info">
                     <p><strong data-lang="diet_info_conditions_label"></strong> <span data-lang="diet_info_conditions"></span></p>
                     <p><strong data-lang="diet_info_cost_label"></strong> <span data-lang="diet_info_cost"></span></p>
@@ -216,23 +197,23 @@
             </div>
         </section>
 
-        <section id="media" class="pe-section js-fade-in pe-section--secondary section-divider to-primary">
-            <div class="pe-container">
-                <h2><span class="material-symbols-outlined">smart_display</span><span data-lang="media_title"></span></h2>
+        <section id="media" class="pe-section section-divider to-primary">
+            <div class="pe-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">smart_display</span><span data-lang="media_title"></span></h2>
                 <p class="pe-section__description" data-lang="media_desc"></p>
                 <div class="pe-grid pe-grid--cols-1">
                     <div class="pe-card">
-                        <div class="pe-video-responsive">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/w3f22qnQO18?rel=0&modestbranding=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+                        <video class="pe-card__video" controls poster="./section/media/promo.webp" src="./section/media/promo.mp4">
+                            Your browser does not support the video element.
+                        </video>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="location" class="pe-section js-fade-in section-divider to-secondary">
-            <div class="pe-container">
-                <h2><span class="material-symbols-outlined">location_on</span><span data-lang="location_title"></span></h2>
+        <section id="location" class="pe-section section-divider to-secondary">
+            <div class="pe-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">location_on</span><span data-lang="location_title"></span></h2>
                 <div class="pe-map-wrapper">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.109918231365!2d-118.49413938478441!3d34.06673898060143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d1f2c0f6b1%3A0x7e0b23b123f1a9a8!2s456%20Santa%20Monica%20Blvd%2C%20Santa%20Monica%2C%20CA%2090401%2C%20USA!5e0!3m2!1sko!2skr!4v1678888888888!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -242,33 +223,33 @@
             </div>
         </section>
 
-        <section id="profile" class="pe-section js-fade-in section-divider to-primary">
-            <div class="pe-container">
-                <h2><span class="material-symbols-outlined">contact_mail</span><span data-lang="profile_title"></span></h2>
+        <section id="profile" class="pe-section section-divider to-primary">
+            <div class="pe-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">contact_mail</span><span data-lang="profile_title"></span></h2>
                 <p class="pe-section__description" data-lang="profile_desc"></p>
-                <div class="pe-contact-list">
-                    <div class="pe-contact-list__item">
-                        <strong class="pe-contact-list__label" data-lang="contact_label_name"></strong>
-                        <span class="pe-contact-list__value" data-lang="rep_name"></span>
+                <div class="pe-profile-list">
+                    <div class="pe-profile-list__item">
+                        <strong class="pe-profile-list__label" data-lang="contact_label_name"></strong>
+                        <span class="pe-profile-list__value" data-lang="rep_name"></span>
                     </div>
-                    <div class="pe-contact-list__item">
-                        <strong class="pe-contact-list__label" data-lang="contact_label_email"></strong>
-                        <a href="mailto:hello@lagirl.kr" class="pe-contact-list__value js-demo-link" data-lang="email_address" data-lang-href="email_href"></a>
+                    <div class="pe-profile-list__item">
+                        <strong class="pe-profile-list__label" data-lang="contact_label_email"></strong>
+                        <a href="mailto:hello@lagirl.kr" class="pe-profile-list__value" data-lang="email_address" data-lang-href="email_href"></a>
                     </div>
                 </div>
                 <div class="pe-button-group">
-                    <a href="#" class="pe-button" data-lang-href="profile_button_url" target="_blank" rel="noopener noreferrer">
-                        <span data-lang="reservation_button"></span>
+                    <a href="#" class="pe-button" data-lang-href="order_button_url" rel="noopener noreferrer">
+                        <span data-lang="order_button"></span>
                     </a>
                 </div>
-                <p class="pe-disclaimer-text" data-lang="demo_msg_information"></p>
+                <p class="pe-demo-msg" data-lang="ex_demo_msg_profile"></p>
             </div>
         </section>
 
-        <section id="contact" class="pe-section pe-section--secondary js-fade-in">
-            <div class="pe-container">
+        <section id="contact" class="pe-section section-divider to-secondary">
+            <div class="pe-container js-fade-in">
                 <h2>
-                    <span class="material-symbols-outlined">mail</span>
+                    <span translate="no" class="material-symbols-outlined notranslate">mail</span>
                     <span data-lang="contact_title"></span>
                 </h2>
                 <p class="pe-section__description" data-lang="contact_desc"></p>
@@ -277,22 +258,18 @@
                     <input type="email" name="email" required class="pe-form__input" data-lang-placeholder="ex_placeholder_email">
                     <div class="pe-form__textarea-wrapper">
                         <textarea name="message" rows="5" required maxlength="1024" class="pe-form__textarea" data-lang-placeholder="ex_placeholder_msg"></textarea>
-                        <div class="pe-form__char-counter">0/1024</div>
                     </div>
                     <button type="submit" class="pe-form__submit">
                         <span class="pe-form__text" data-lang="ex_btn_submit"></span>
-                        <span class="pe-form__loader hidden">
-                            <span class="material-symbols-outlined animate-spin">progress_activity</span>
-                        </span>
                     </button>
                     <div class="pe-form__status"></div>
                 </form>
             </div>
         </section>
 
-        <section id="request" class="pe-section js-fade-in">
-            <div class="pe-container">
-                <h2><span class="material-symbols-outlined">auto_awesome</span><span data-lang="demo_request_title"></span></h2>
+        <section id="request" class="pe-section">
+            <div class="pe-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">auto_awesome</span><span data-lang="demo_request_title"></span></h2>
                 <p class="pe-section__description" data-lang="demo_request_desc"></p>
                 <div class="pe-button-group">
                     <a href="#" class="pe-button" data-lang-href="demo_request_button_url" rel="noopener noreferrer">
@@ -304,17 +281,14 @@
     </main>
 
     <footer class="pe-footer">
-        <p class="render-as-html" data-lang="copyright_text"></p>
-        <p><a data-lang-href="footer_credit_url" rel="noopener noreferrer" data-lang="footer_credit_text"></a></p>
+        <div class="pe-container">
+            <p class="render-as-html" data-lang="copyright_text"></p>
+            <p><a data-lang-href="footer_credit_url" rel="noopener noreferrer" data-lang="footer_credit_text"></a></p>
+        </div>
     </footer>
 
     <a href="#home" id="to-top-btn" class="hidden">
         <span class="material-symbols-outlined">arrow_upward</span>
     </a>
-    
-    <div id="turnstile-container" style="position:absolute; top:-9999px; left:-9999px;"></div>
-
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
-    <script src="./lay.js?update=20251121" defer></script>
 </body>
 </html>

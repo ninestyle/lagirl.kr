@@ -9,8 +9,7 @@
 const siteConfig = {
     language: 'ko',
     theme_color: '#E07A5F',
-    
-    API_HOST: 'https://www.lagirl.kr', 
+    demo_mode: true,
 
     canvas_target: '#home',
     canvas_effect: 'breathingGradientEffect', 

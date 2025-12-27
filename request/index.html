@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--
+        Version: Express 4.0 Migration (Fixed Date Input Structure)
+        Last Modified: 2025-12-09 16:15:00 (KST)
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://www.lagirl.kr/section/home/1.webp">
+    <link rel="icon" href="https://www.lagirl.kr/favicon.ico" type="image/x-icon">
+    <title>LA GIRL Pilates & Yoga</title>
+
+    <!-- [Tier 1] Express Core (Facility) -->
+    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/v4/express-v4.css">
+    <script src="https://cdn.dam.so/_inc/express/v4/express-v4.js"></script>
+
+    <!-- [Tier 2] Form Express (Space) - NEW V4 -->
+    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/v4/form-v4.css">
+    <script src="https://cdn.dam.so/_inc/express/v4/form-v4.js"></script>
+
+    <!-- [Tier 3] User Custom (Interior) -->
+    <link rel="stylesheet" href="./lay.css">
+    <script src="./lay.js" defer></script>
+</head>
+<body>
+
+<div class="fe-app">
+    <!-- Optional: Tier 1 Canvas Effect (If needed) -->
+    <div class="ex-canvas"></div>
+
+    <div class="fe-container">
+        
+        <header class="fe-header">
+            <h1 class="fe-header__title" data-lang="site_title">LA GIRL</h1>
+            <p class="fe-header__desc" data-lang="home_subtitle">Registration Form</p>
+        </header>
+
+        <!-- Language Switcher -->
+        <nav class="fe-lang-switcher">
+            <a href="?lang=ko" class="fe-lang-btn">KO</a>
+            <a href="?lang=en" class="fe-lang-btn">EN</a>
+        </nav>
+
+        <form class="fe-form" novalidate>
+            <div class="fe-card">
+                <!-- Name -->
+                <div class="fe-group">
+                    <label class="fe-label" data-lang="applicant_name">Name</label>
+                    <input type="text" name="name" class="fe-input" data-lang-placeholder="ph_name" required>
+                </div>
+
+                <!-- Contact -->
+                <div class="fe-group">
+                    <label class="fe-label" data-lang="applicant_contact">Contact</label>
+                    <input type="tel" name="contact" class="fe-input" data-lang-placeholder="ph_contact" required>
+                </div>
+
+                <!-- Visitor Count -->
+                <div class="fe-group">
+                    <label class="fe-label" data-lang="visitor_count">Count</label>
+                    <select name="visitor_count" class="fe-select" required>
+                        <option value="1" data-lang="visitor_count_one">1</option>
+                        <option value="2" data-lang="visitor_count_two">2</option>
+                        <option value="3" data-lang="visitor_count_three">3</option>
+                    </select>
+                </div>
+
+                <!-- Program -->
+                <div class="fe-group">
+                    <label class="fe-label" data-lang="program">Program</label>
+                    <select name="service" class="fe-select" required>
+                        <option value="" data-lang="program_select">Select...</option>
+                        <option value="1:1 Private Lesson" data-lang="services_01">1:1</option>
+                        <option value="6:1 Group Lesson" data-lang="services_02">6:1</option>
+                        <option value="Vinyasa/Healing Yoga" data-lang="services_03">Yoga</option>
+                        <option value="Diet Program" data-lang="services_04">Diet</option>
+                    </select>
+                    <p class="fe-note" data-lang="services_desc"></p>
+                </div>
+
+                <!-- Date & Time (Fixed for Required Asterisk) -->
+                <div class="fe-group">
+                    <label class="fe-label" data-lang="reservation_datetime">Date</label>
+                    <input type="date" name="reservation_date" class="fe-input" required style="flex:2;">
+                    
+                    <div style="display:flex; gap:10px; margin-top: 10px;">
+                        <select name="reservation_hour" class="fe-select" style="flex:1;">
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="19:00">19:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- File Upload (V4 Structure) -->
+                <div class="fe-group">
+                    <label class="fe-label" data-lang="ex_file_upload_title">Files</label>
+                    <div class="fe-file-wrapper">
+                        <input type="file" name="attachments[]" class="fe-file-input" multiple accept=".jpg,.jpeg,.png,.webp">
+                        <div class="fe-file-label" data-lang="ex_file_default_label">Select Files</div>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div class="fe-group">
+                    <label class="fe-label" data-lang="additional_requests_title">Message</label>
+                    <textarea name="message" class="fe-textarea" data-lang-placeholder="ph_requests"></textarea>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="fe-submit-area">
+                <div class="fe-check-group">
+                    <input type="checkbox" name="agree" id="agree" class="fe-check-input" required>
+                    <label for="agree" class="fe-check-label" data-lang="label_agree">Agree</label>
+                </div>
+                <button type="submit" class="fe-btn fe-btn--submit">
+                    <span data-lang="submit_button">Submit</span>
+                </button>
+            </div>
+        </form>
+
+        <footer>
+            &copy; LA GIRL Pilates.
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

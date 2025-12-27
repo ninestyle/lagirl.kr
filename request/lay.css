@@ -1,0 +1,50 @@
+/*
+    LA GIRL Style Override (Tier 3)
+    Overwrite Tier 1 & Tier 2 variables here.
+*/
+
+/* 1. Theme Colors */
+:root {
+    /* Brand Color: Terracotta */
+    --ex-color-accent: #E07A5F; 
+    
+    /* Mapped to Form V4 */
+    --fe-color-primary: var(--ex-color-accent);
+    --fe-radius: 16px; /* Rounder Cards */
+}
+
+/* 2. Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+body {
+    font-family: "Poppins", "Noto Sans KR", sans-serif;
+    background-color: #FAFAFA; /* Light Grey BG */
+}
+
+/* 3. Custom Skinning */
+.fe-header__title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fe-btn--submit {
+    /* Gradient Button */
+    background: linear-gradient(135deg, #E07A5F 0%, #D6694D 100%);
+}
+
+.fe-lang-switcher {
+    display: flex; justify-content: center; gap: 8px; margin-bottom: 24px;
+}
+.fe-lang-btn {
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #888;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.fe-lang-btn:hover { color: var(--ex-color-accent); }
+
+/* Active Language Logic (Handled via CSS selector on URL match not implemented in JS anymore, so simple active class or basic style) */
+/* Note: V4 Core handles lang switching, but for visual active state in HTML links, we can add simple JS or CSS target */
